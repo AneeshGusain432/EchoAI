@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    "Geist Variable",
+    Inter,
+    system-ui,
+    sans-serif;
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
