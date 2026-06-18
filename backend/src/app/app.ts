@@ -22,7 +22,7 @@ function createExpressApplication(): Application {
   // middlewares
   app.use(express.json());
   app.use(cookieParser())
-  app.use(cors({ origin: [process.env.FRONTEND_URL!,"https://echo-ai-5iu8.vercel.app"], credentials: true }))
+  app.use(cors({ origin: ["https://echo-ai-5iu8.vercel.app", "http://localhost:5173", process.env.FRONTEND_URL!], credentials: true }))
 
   app.use("/api/v1/mcp", (req, res, next) => {
     const tenantId = req.user?.id ?? req.headers["x-tenant-id"] as string;
