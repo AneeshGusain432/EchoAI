@@ -1,6 +1,6 @@
 import type { Request, Response } from "express"
-import ApiResponse from "../../common/utils/apiResponse.ts";
-import * as corsairService from "./corsairService.ts"
+import ApiResponse from "../../common/utils/apiResponse.js";
+import * as corsairService from "./corsairService.js"
 
 
 async function connectEmailController(req: Request, res: Response) {

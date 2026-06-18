@@ -1,8 +1,8 @@
-import ApiResponse from "../../common/utils/apiResponse.ts";
-import agent from "../agent/agent.ts";
+import ApiResponse from "../../common/utils/apiResponse.js";
+import agent from "../agent/agent.js";
 import type { Request, Response } from "express";
-import chatValidation from "./validation.ts";
-import ApiError from "../../common/utils/apiError.ts";
+import chatValidation from "./validation.js";
+import ApiError from "../../common/utils/apiError.js";
 
 async function ChatController(req: Request, res: Response) {
 

@@ -1,6 +1,6 @@
 import {Router} from 'express'
-import { getMeController, googleSignInController, logoutController, refreshTokenController } from './authController.ts';
-import { authenticate } from '../../common/middleware/authMiddleware.ts';
+import { getMeController, googleSignInController, logoutController, refreshTokenController } from './authController.js';
+import { authenticate } from '../../common/middleware/authMiddleware.js';
 
 const authRouter: Router = Router()
 

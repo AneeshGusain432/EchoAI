@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { createServer } from "node:http";
-import createExpressApplication from "./app/app.ts";
+import createExpressApplication from "./app/app.js";
 
 async function main() {
   const server = createServer(createExpressApplication());

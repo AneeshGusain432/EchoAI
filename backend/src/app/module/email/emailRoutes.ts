@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authenticate } from "../../common/middleware/authMiddleware.ts";
+import { authenticate } from "../../common/middleware/authMiddleware.js";
 import {
   archiveEmailController,
   forwardEmailController,
@@ -12,7 +12,7 @@ import {
   starEmailController,
   trashEmailController,
   unstarEmailController,
-} from "./emailController.ts";
+} from "./emailController.js";
 
 const emailRouter: Router = Router();
 emailRouter.use(authenticate);

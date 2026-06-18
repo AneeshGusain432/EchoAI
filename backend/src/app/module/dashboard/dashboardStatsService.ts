@@ -1,4 +1,4 @@
-import { corsair } from "../../../server/corsair.ts";
+import { corsair } from "../../../server/corsair.js";
 
 export async function getUnreadEmailsCount(tenantId: string) {
   const tenant = corsair.withTenant(tenantId);

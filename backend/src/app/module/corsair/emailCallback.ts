@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import * as corsairService from "./corsairService.ts";
-import ApiError from "../../common/utils/apiError.ts";
+import * as corsairService from "./corsairService.js";
+import ApiError from "../../common/utils/apiError.js";
 
 async function emailCallbackController(req: Request, res: Response) {
   const { code, state } = req.query;

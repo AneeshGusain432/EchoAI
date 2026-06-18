@@ -1,5 +1,5 @@
 import type { Request, Response } from "express"
-import * as corsairService from './corsairService.ts'
+import * as corsairService from './corsairService.js'
 
 
 async function calendarCallbackController(req: Request, res: Response) {

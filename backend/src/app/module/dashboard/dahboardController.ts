@@ -1,9 +1,9 @@
 import type { Request, Response } from "express";
-import ApiResponse from "../../common/utils/apiResponse.ts";
+import ApiResponse from "../../common/utils/apiResponse.js";
 import {
   getCalendarEvents,
   getUnreadEmailsCount,
-} from "./dashboardStatsService.ts";
+} from "./dashboardStatsService.js";
 
 async function getUnreadEmailController(req: Request, res: Response) {
   const tenantId = req.user?.id!;

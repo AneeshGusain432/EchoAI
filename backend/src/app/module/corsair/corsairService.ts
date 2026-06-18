@@ -1,5 +1,5 @@
 import { generateOAuthUrl, processOAuthCallback } from "corsair/oauth";
-import { corsair } from "../../../server/corsair.ts";
+import { corsair } from "../../../server/corsair.js";
 
 export async function connectEmail(userId: string) {
   const { url } = await generateOAuthUrl(corsair, "gmail", {

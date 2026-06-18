@@ -1,4 +1,4 @@
-import { corsair } from "./../server/corsair.ts";
+import { corsair } from "./../server/corsair.js";
 import {
   createBaseMcpServer,
   createMcpRouter,
@@ -6,12 +6,12 @@ import {
 import express from "express";
 import cookieParser from 'cookie-parser'
 import type { Application } from "express";
-import authRoutes from './module/auth/authRoutes.ts'
-import corsairRoutes from './module/corsair/corsairRoute.ts'
-import chatRoutes from './module/chat/chatRoute.ts'
-import emailRoutes from "./module/email/emailRoutes.ts"
-import dashboardRoutes from './module/dashboard/dashboardRoutes.ts'
-import calendarRoutes from './module/calendar/calendarRoutes.ts'
+import authRoutes from './module/auth/authRoutes.js'
+import corsairRoutes from './module/corsair/corsairRoute.js'
+import chatRoutes from './module/chat/chatRoute.js'
+import emailRoutes from "./module/email/emailRoutes.js"
+import dashboardRoutes from './module/dashboard/dashboardRoutes.js'
+import calendarRoutes from './module/calendar/calendarRoutes.js'
 import cors from 'cors'
 
 

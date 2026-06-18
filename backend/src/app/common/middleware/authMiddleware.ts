@@ -1,8 +1,8 @@
-import ApiError from "../../common/utils/apiError.ts";
+import ApiError from "../../common/utils/apiError.js";
 import type { NextFunction, Request, Response } from "express";
-import { verifyAccessToken } from "../utils/token.ts";
-import { db } from "../../../server/corsair.ts";
-import { userTable } from "../db/schema.ts";
+import { verifyAccessToken } from "../utils/token.js";
+import { db } from "../../../server/corsair.js";
+import { userTable } from "../db/schema.js";
 import { eq, type InferSelectModel } from "drizzle-orm";
 
 type User = InferSelectModel<typeof userTable>;

@@ -1,8 +1,8 @@
 import type { Request, Response } from "express";
-import { googleValidation } from "./validation.ts";
-import ApiError from "../../common/utils/apiError.ts";
-import * as authService from "./authService.ts";
-import ApiResponse from "../../common/utils/apiResponse.ts";
+import { googleValidation } from "./validation.js";
+import ApiError from "../../common/utils/apiError.js";
+import * as authService from "./authService.js";
+import ApiResponse from "../../common/utils/apiResponse.js";
 
 async function googleSignInController(req: Request, res: Response) {
   const { data, error } = googleValidation.safeParse(req.body);

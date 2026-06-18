@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { authenticate } from "../../common/middleware/authMiddleware.ts";
+import { authenticate } from "../../common/middleware/authMiddleware.js";
 import {
   getCalendarController,
   getUnreadEmailController,
-} from "./dahboardController.ts";
+} from "./dahboardController.js";
 
 const dashboardRouter: Router = Router();
 

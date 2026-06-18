@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import ApiResponse from "../../common/utils/apiResponse.ts";
-import ApiError from "../../common/utils/apiError.ts";
+import ApiResponse from "../../common/utils/apiResponse.js";
+import ApiError from "../../common/utils/apiError.js";
 import {
   getAllEmails,
   getUnreadEmails,
@@ -20,7 +20,7 @@ import {
   markAsUnread,
   archiveEmail,
   forwardEmail,
-} from "./emailService.ts";
+} from "./emailService.js";
 
 async function getEmailsController(req: Request, res: Response) {
   try {

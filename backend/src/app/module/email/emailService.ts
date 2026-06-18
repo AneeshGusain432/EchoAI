@@ -1,4 +1,4 @@
-import { corsair } from "../../../server/corsair.ts";
+import { corsair } from "../../../server/corsair.js";
 
 function getHeader(payload: any, headerName: string) {
   return (

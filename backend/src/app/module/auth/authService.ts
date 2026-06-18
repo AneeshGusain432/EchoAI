@@ -4,13 +4,13 @@ import {
   hashToken,
   verifyAccessToken,
   verifyRefreshToken,
-} from "../../common/utils/token.ts";
-import { oAuthClient } from "../../common/config/googleAuth.ts";
+} from "../../common/utils/token.js";
+import { oAuthClient } from "../../common/config/googleAuth.js";
 import { google } from "googleapis";
-import { db } from "../../../server/corsair.ts";
-import { userTable } from "../../common/db/schema.ts";
+import { db } from "../../../server/corsair.js";
+import { userTable } from "../../common/db/schema.js";
 import { eq } from "drizzle-orm";
-import ApiError from "../../common/utils/apiError.ts";
+import ApiError from "../../common/utils/apiError.js";
 
 async function googleSignin(code: string) {
   const { tokens } = await oAuthClient.getToken(code);

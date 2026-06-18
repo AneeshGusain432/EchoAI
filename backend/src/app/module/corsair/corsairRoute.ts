@@ -1,9 +1,9 @@
 import {Router} from 'express'
-import { authenticate } from '../../common/middleware/authMiddleware.ts';
-import connectEmailController from './connectEmail.ts';
-import emailCallbackController from './emailCallback.ts';
-import connectCalendarController from './connectCalendar.ts';
-import calendarCallbackController from './calendarCallback.ts';
+import { authenticate } from '../../common/middleware/authMiddleware.js';
+import connectEmailController from './connectEmail.js';
+import emailCallbackController from './emailCallback.js';
+import connectCalendarController from './connectCalendar.js';
+import calendarCallbackController from './calendarCallback.js';
 
 const corsairRouter: Router = Router()
 

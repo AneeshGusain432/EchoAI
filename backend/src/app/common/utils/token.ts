@@ -1,6 +1,6 @@
 import Jwt from "jsonwebtoken";
 import crypto from "crypto";
-import ApiError from "./apiError.ts";
+import ApiError from "./apiError.js";
 
 export interface TokenPayload {
   id: string;
