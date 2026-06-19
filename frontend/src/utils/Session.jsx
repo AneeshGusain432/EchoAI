@@ -10,7 +10,7 @@ export default function Session({ children }) {
       timeout = setTimeout(() => {
         localStorage.removeItem("auth-user");
         window.location.href = "/";
-      }, 5 * 60 * 1000); // 30 mins
+      }, 5 * 60 * 1000); 
     };
 
     ["mousemove", "mousedown", "keydown", "scroll", "touchstart"].forEach(

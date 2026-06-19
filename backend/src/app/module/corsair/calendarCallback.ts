@@ -15,7 +15,7 @@ async function calendarCallbackController(req: Request, res: Response) {
     await corsairService.calendarCallback(code as string, state as string)
 
     return res.redirect(
-        "http://localhost:5173/dashboard"
+        "https://echo-ai-5iu8.vercel.app/dashboard"
     );
 }
 

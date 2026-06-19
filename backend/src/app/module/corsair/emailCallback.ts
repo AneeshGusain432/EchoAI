@@ -11,7 +11,7 @@ async function emailCallbackController(req: Request, res: Response) {
 
   await corsairService.emailCallback(code as string, state as string);
 
-  return res.redirect("http://localhost:5173/dashboard");
+  return res.redirect("https://echo-ai-5iu8.vercel.app/dashboard");
 }
 
 export default emailCallbackController;
