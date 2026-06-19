@@ -49,7 +49,7 @@ function Footer() {
               </ul>
             </div>
           ))}
-          <div className="mt-6 flex gap-4">
+          {/* <div className="mt-6 flex gap-4">
             {["X", "LinkedIn", "GitHub"].map((item) => (
               <a
                 key={item}
@@ -59,7 +59,7 @@ function Footer() {
                 {item}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-blue-500/10 pt-8 sm:flex-row">
