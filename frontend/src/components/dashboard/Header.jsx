@@ -41,14 +41,14 @@ export default function Header({ setMobileOpen }) {
         {/* Connect buttons — hidden on mobile */}
         <button
           onClick={() => connectEmail.mutate()}
-          className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl border border-white/8 text-xs text-white/40 hover:text-white/70 hover:border-white/15 transition-all"
+          className=" sm:flex items-center gap-1.5 px-3 py-2 rounded-xl border border-white/8 text-xs text-white/40 hover:text-white/70 hover:border-white/15 transition-all"
         >
           <Mail size={13} />
           <span className="hidden lg:inline">Connect Email</span>
         </button>
         <button
           onClick={() => connectCalendar.mutate()}
-          className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-xs text-white font-medium transition-colors shadow-lg shadow-blue-900/30"
+          className=" sm:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-xs text-white font-medium transition-colors shadow-lg shadow-blue-900/30"
         >
           <CalendarDays size={13} />
           <span className="hidden lg:inline">Connect Calendar</span>
